@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsSeatHub - Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SportsSeatHub - Book Your Tickets</h1>
+    </header>
+
+    <main>
+        <section id="events">
+            <h2>Available Events</h2>
+            <div class="event">
+                <h3>⚽ Football Match: Bengaluru vs Kerala </h3>
+                <p>Date: 10th April 2025 | Venue: Stadium Kanteerava</p>
+                <button class="book-btn" onclick="openBookingForm('Football Match')">Book Now</button>
+            </div>
+
+            <div class="event">
+                <h3> Cricket Match: RCB vs Chennai</h3>
+                <p>Date: 15th April 2025 | Venue: M.Chinnaswamy</p>
+                <button class="book-btn" onclick="openBookingForm('Basketball Match')">Book Now</button>
+            </div>
+        </section>
+
+        <section id="booking-form" class="hidden">
+            <h2>Book Your Ticket</h2>
+            <form id="ticket-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="tickets">Number of Tickets:</label>
+                <input type="number" id="tickets" min="1" max="5" required>
+
+                <input type="hidden" id="event-name">
+                
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </section>
+
+        <div>
+            <h2>Booking Confirmed ✅</h2>
+            <p></p>
+            <button >Close</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
