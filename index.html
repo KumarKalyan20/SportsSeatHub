@@ -15,14 +15,14 @@
         <section id="events">
             <h2>Available Events</h2>
             <div class="event">
-                <h3>⚽ Football Match: Bengaluru vs Kerala </h3>
+                <h3>⚽ Football Match: Bengaluru vs Kerala</h3>
                 <p>Date: 10th April 2025 | Venue: Stadium Kanteerava</p>
                 <button class="book-btn" onclick="openBookingForm('Football Match')">Book Now</button>
             </div>
 
             <div class="event">
-                <h3> Cricket Match: RCB vs Chennai</h3>
-                <p>Date: 15th April 2025 | Venue: M.Chinnaswamy</p>
+                <h3>🏀 Basketball Match: Mumbai vs Hydrabad</h3>
+                <p>Date: 15th April 2025 | Venue: Hydrabad</p>
                 <button class="book-btn" onclick="openBookingForm('Basketball Match')">Book Now</button>
             </div>
         </section>
@@ -45,10 +45,10 @@
             </form>
         </section>
 
-        <div>
+        <div id="confirmation" class="hidden">
             <h2>Booking Confirmed ✅</h2>
-            <p></p>
-            <button >Close</button>
+            <p id="confirmation-message"></p>
+            <button onclick="closeConfirmation()">Close</button>
         </div>
     </main>
 
